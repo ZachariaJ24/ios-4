@@ -48,3 +48,26 @@ This project is configured to work with App Store Connect:
 - SSZipArchive
 
 All dependencies are managed via CocoaPods and included in the Pods/ directory.
+
+## Installing Dependencies
+
+If you need to reinstall the Pods:
+
+1. **Install CocoaPods** (if not already installed):
+   ```bash
+   gem install cocoapods
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   pod install
+   ```
+   
+   Or run the provided script:
+   - **Windows:** `install-pods.bat`
+   - **Mac/Linux:** `install-pods.sh`
+
+3. **Open the workspace**:
+   ```
+   Open SecretChelSociety.xcworkspace in Xcode
+   ```
