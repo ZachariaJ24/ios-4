@@ -1,45 +1,35 @@
 # Secret Chel Society - Clean iOS Project
 
-This is a clean, working iOS project structure for the Secret Chel Society app.
+This is a clean, working replica of the Secret Chel Society iOS app project.
 
 ## Project Structure
 
-- `SecretChelSociety.xcworkspace` - Main workspace file (use this to open the project)
-- `SecretChelSociety.xcodeproj` - Xcode project file
-- `SecretChelSociety/` - Source code directory
-- `Pods/` - CocoaPods dependencies
-- `Podfile` - CocoaPods configuration
+```
+SecretChelSociety-Clean/
+├── SecretChelSociety.xcworkspace    ← Use this to open the project
+├── SecretChelSociety.xcodeproj
+├── SecretChelSociety/               ← All your source code
+├── Pods/                           ← CocoaPods dependencies
+├── Podfile                         ← CocoaPods configuration
+├── Podfile.lock                    ← Dependency lock file
+├── GoogleService-Info.plist
+└── plugins.rb
+```
 
-## Key Features
+## How to Open
 
-✅ **Properly configured workspace** with shared schemes
-✅ **Development Team ID set** to 32LUG7HQA6
-✅ **Bundle Identifier** set to co.median.ios.xlderal
-✅ **All source files** copied from original project
-✅ **CocoaPods dependencies** included
-✅ **Shared scheme** for App Store Connect compatibility
-
-## How to Use
-
-1. **Open in Xcode:**
+1. **Open the workspace file** (NOT the .xcodeproj file):
    ```
-   Open SecretChelSociety.xcworkspace (NOT the .xcodeproj file)
+   Open SecretChelSociety.xcworkspace in Xcode
    ```
 
-2. **Build the project:**
-   - Select "Any iOS Device" as destination
-   - Product → Build
+2. **Build and run** the project
 
-3. **Archive for App Store:**
-   - Product → Archive
-   - Upload to App Store Connect
+## App Configuration
 
-## App Store Connect
-
-This project is configured to work with App Store Connect:
-- Development Team: 32LUG7HQA6
-- Bundle ID: co.median.ios.xlderal
-- Shared scheme: SecretChelSociety
+- **App Name:** Secret Chel Society
+- **Bundle ID:** co.median.ios.xlderal
+- **Platform:** iOS 13.0+
 
 ## Dependencies
 
@@ -71,3 +61,20 @@ If you need to reinstall the Pods:
    ```
    Open SecretChelSociety.xcworkspace in Xcode
    ```
+
+## App Store Connect
+
+This project is configured to work with App Store Connect:
+- Development Team: 32LUG7HQA6
+- Bundle ID: co.median.ios.xlderal
+- Shared scheme: SecretChelSociety
+
+## Troubleshooting
+
+If you see red Pods in Xcode:
+1. Close Xcode
+2. Delete the workspace file
+3. Run `pod install` (if you have CocoaPods installed)
+4. Reopen the workspace
+
+The workspace has been freshly recreated to fix any Pods reference issues.
