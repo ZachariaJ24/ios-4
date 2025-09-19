@@ -5,7 +5,7 @@ require 'xcodeproj'
 require 'active_support/inflector'
 
 def use_plugins!
-  app_config = JSON.parse(File.read(__dir__ + '/LeanIOS/appConfig.json'))
+  app_config = JSON.parse(File.read(__dir__ + '/SecretChelSociety/appConfig.json'))
   services = app_config['services']
 
   services = services.select do |_service_name, service| 
