@@ -32,6 +32,11 @@ jobs:
       with:
         xcode-version: latest-stable
     
+    - name: List available schemes
+      working-directory: ./ios
+      run: |
+        xcodebuild -workspace SecretChelSociety.xcworkspace -list
+    
     - name: Build for iOS Simulator
       working-directory: ./ios
       run: |
