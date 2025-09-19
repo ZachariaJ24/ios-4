@@ -1,23 +1,20 @@
 {
   "expo": {
-    "name": "Secret Chel Society New",
-    "slug": "secret-chel-society-new",
+    "name": "SecretChelSocietyApp",
+    "slug": "SecretChelSocietyApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "midnightstudiosintl.scs",
-      "buildNumber": "1",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
@@ -27,10 +24,17 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
+      "edgeToEdgeEnabled": true,
       "package": "midnightstudiosintl.scs"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    "extra": {
+      "eas": {
+        "projectId": "c355b3c3-feec-45d6-b955-edd0ca10202b"
+      }
+    },
+    "owner": "midnight-studios-intl"
   }
 }
