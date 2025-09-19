@@ -1,14 +1,8 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '13.0'
 
-# Use HTTPS for CI environments, SSH for local development
-if ENV['CI']
-  source 'https://cdn.cocoapods.org/'
-  source 'https://github.com/gonativeio/gonative-specs.git'
-else
-  source 'https://cdn.cocoapods.org/'
-  source 'git@github.com:gonativeio/gonative-specs.git'
-end
+source 'https://cdn.cocoapods.org/'
+source 'git@github.com:gonativeio/gonative-specs.git'
 
 require_relative './plugins.rb'
 
