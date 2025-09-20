@@ -4,10 +4,10 @@
     "slug": "secret-chel-society-new",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./SecretChelSocietyApp/assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./SecretChelSocietyApp/assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -24,13 +24,13 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./SecretChelSocietyApp/assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "midnightstudiosintl.scs"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    },
+      "favicon": "./SecretChelSocietyApp/assets/favicon.png"
+    }
   }
 }
